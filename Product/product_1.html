@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Product Page</title>
+    <link rel="stylesheet" href="css/product_1.css" type="text/css" />
+</head>
+<body>
+    <header>
+    <img src="img/Nykaa_New_Logo.svg" alt="Nykaa" title="Nykaa" />
+</header>
+    <div class="form-container">
+        <h2>Add a Product</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter product title">
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Enter product description">
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter product price">
+
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Skincare">Skincare</option>
+            <option value="Makeup">Makeup</option>
+            <option value="Haircare">Haircare</option>
+            <option value="Fragrance">Fragrance</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Natural">Natural</option>
+        </select>
+
+        <label for="brand">Brand:</label>
+        <select id="brand" required>
+            <option value="">Select Brand</option>
+            <option value="L'Oreal">L'Oreal</option>
+            <option value="Maybelline">Maybelline</option>
+            <option value="Nykaa">Nykaa</option>
+            <option value="The Body Shop">The Body Shop</option>
+            <option value="lotus">Lotus</option>
+            <option value="Lakme">Lakme</option>
+            <option value="wow">Wow</option>
+            <option value="nivea">Nivea</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <select id="color">
+            <option value=""> Select Color </option>
+            <option value="#FF5733"> Vibrant Coral</option>
+            <option value="#C70039"> Deep Maroon</option>
+            <option value="#900C3F"> Berry Purple</option>
+            <option value="#FFC300"> Golden Yellow</option>
+            <option value="#DAF7A6"> Mint Green</option>
+            <option value="#581845"> Plum</option>
+            <option value="#FF33FF"> Bright Pink</option>
+            <option value="#33FF57"> Lime Green</option>
+            <option value="#339FFF"> Sky Blue</option>
+            <option value="#FF6F61"> Peachy Pink</option>
+        </select>
+        <label for="color">Quantity:</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button id="add-product">Add Product</button>
+    </div>
+
+    <div class="card-container" id="product-list">
+        Products will appear here
+    </div>
+
+    <div class="cart-container">
+        <h2>Cart Section</h2>
+        <ul id="cart-items">
+        </ul>
+    </div>
+    <script src="js/product.js"></script>
+</body>
+</html>
+
